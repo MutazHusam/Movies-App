@@ -3,7 +3,7 @@ import Nav from "./Components/Nav/Nav";
 import HomeScreen from "./Screen/HomeScreen/HomeScreen";
 import MovieScreen from "./Screen/MovieScreen/MovieScreen";
 import { Routes, Route } from "react-router-dom";
-import { useState } from "react/cjs/react.development";
+import { useState } from "react";
 import { ThemeProvider } from "styled-components";
 import { GlobalStyles } from "./Global.Styles";
 import { lightTheme, darkTheme } from "./Themes";

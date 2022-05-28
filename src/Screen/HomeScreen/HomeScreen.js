@@ -13,7 +13,7 @@ import {
   Title,
 } from "./HomeScreen.Styles";
 import Card from "../../Components/Card/Card";
-import { useCallback, useEffect, useState } from "react/cjs/react.development";
+import { useCallback, useEffect, useState } from "react";
 import { CRUDRequests } from "../../API";
 const Index = Math.round(Math.random()*10)+10;
 function HomeScreen(props) {

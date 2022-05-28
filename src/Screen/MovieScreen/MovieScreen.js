@@ -25,7 +25,7 @@ import {
 } from "./MovieScreen.Styles";
 import ActorCard from "../../Components/ActorCard/ActorCard";
 import { useParams } from "react-router";
-import { useCallback, useEffect, useState } from "react/cjs/react.development";
+import { useCallback, useEffect, useState } from "react";
 import { CRUDRequests } from "../../API";
 
 function MovieScreen() {
