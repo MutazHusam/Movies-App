@@ -24,7 +24,7 @@ function Nav({ theme, themeToggler }) {
         <Switch
         width={65}
         height={33}
-          onColor="rgb(136, 136, 136)"
+          onColor="#888"
           onChange={handelChange}
           checked={checked}
           className="react-switch"

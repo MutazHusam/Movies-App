@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export const NavContainer = styled(FlexRow)`
   background: #1c1c1c;
-  height: 120px;
+  height: 100px;
 `;
 
 export const NavInnerContainer = styled(FlexRow)`

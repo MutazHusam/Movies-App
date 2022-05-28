@@ -15,7 +15,7 @@ import {
 import Card from "../../Components/Card/Card";
 import { useCallback, useEffect, useState } from "react/cjs/react.development";
 import { CRUDRequests } from "../../API";
-
+const Index = Math.round(Math.random()*10)+10;
 function HomeScreen(props) {
   const [moviesList, setMoviesList] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -46,11 +46,11 @@ function HomeScreen(props) {
   ) : (
     <FlexColumn>
       <HeroSection
-        img={"https://image.tmdb.org/t/p/w500" + moviesList[0].backdrop_path}
+        img={"https://image.tmdb.org/t/p/w500" + moviesList[Index].backdrop_path}
       >
         <InnerHeroSection>
-          <Title>{moviesList[0].title}</Title>
-          <Description>{moviesList[0].overview}</Description>
+          <Title>{moviesList[Index].title}</Title>
+          <Description>{moviesList[Index].overview}</Description>
         </InnerHeroSection>
       </HeroSection>
       <InnerSection>

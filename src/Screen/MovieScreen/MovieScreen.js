@@ -24,8 +24,7 @@ import {
   ProgressBarPercentage,
 } from "./MovieScreen.Styles";
 import ActorCard from "../../Components/ActorCard/ActorCard";
-import { useParams, useLocation } from "react-router";
-import useSearchQuery from "../../Utils/querySearch";
+import { useParams } from "react-router";
 import { useCallback, useEffect, useState } from "react/cjs/react.development";
 import { CRUDRequests } from "../../API";
 
@@ -45,8 +44,6 @@ function MovieScreen() {
     fetchData();
   }, [fetchData]);
 
-  const location = useLocation();
-  const query = useSearchQuery(location.search);
   const navigate = useNavigate();
 
   useEffect(() => {
